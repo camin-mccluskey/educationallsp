@@ -9,7 +9,7 @@ The server is a very incomplete implementation to the [Language Server Protocol 
 Build the server:
 
 ```sh
-go build main.go
+go build main.go -o bin
 ```
 
 Make your editor aware of the LSP server (Neovim example, but should work with VS Code etc...):
@@ -18,7 +18,7 @@ Make your editor aware of the LSP server (Neovim example, but should work with V
 local client = vim.lsp.start_client({
   name = "educationallsp",
   cmd = {
-    "<path-to-server-executable>"
+    "<path-to-server-executable>" -- "/Users/caminmccluskey/projects/educationallsp/bin/educationallsp"
   },
 })
 

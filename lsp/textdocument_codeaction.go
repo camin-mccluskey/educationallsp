@@ -6,7 +6,7 @@ type CodeActionRequest struct {
 }
 
 type TextDocumentCodeActionParams struct {
-	context      CodeActionContext      `json:"context"`
+	Context      CodeActionContext      `json:"context"`
 	TextDocument TextDocumentIdentifier `json:"textDocument"`
 	Range        Range                  `json:"range"`
 }
