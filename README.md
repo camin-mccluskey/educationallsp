@@ -9,7 +9,7 @@ The server is a very incomplete implementation to the [Language Server Protocol 
 Build the server:
 
 ```sh
-go build main.go -o bin
+go build -o bin
 ```
 
 Make your editor aware of the LSP server (Neovim example, but should work with VS Code etc...):
